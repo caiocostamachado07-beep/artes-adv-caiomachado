@@ -1,0 +1,43 @@
+name: Gerar narração (voz) dos Reels
+# Lê voz/pedidos.json: lista de {"arquivo": "<nome-do-reels>", "voz": "pt-BR-AntonioNeural", "falas": ["texto tela 1", "texto tela 2", ...]}
+# Gera voz/<arquivo>/01.mp3, 02.mp3 ... (uma por tela) com edge-tts e faz commit.
+on:
+  push:
+    paths: ["voz/pedidos.json"]
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  voz:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.11" }
+      - name: Instalar
+        run: pip install edge-tts gTTS
+      - name: Gerar
+        run: |
+          python3 - <<'PY'
+          import asyncio, json, os
+          import edge_tts
+          from gtts import gTTS
+          pedidos = json.load(open("voz/pedidos.json"))
+          async def um(texto, voz, dest):
+              await edge_tts.Communicate(texto, voz, rate="-5%").save(dest)
+          for p in pedidos:
+              d = f"voz/{p['arquivo']}"; os.makedirs(d, exist_ok=True)
+              for i, fala in enumerate(p["falas"], 1):
+                  dest = f"{d}/{i:02d}.mp3"
+                  if os.path.exists(dest): continue
+                  try:
+                      asyncio.run(um(fala, p.get("voz", "pt-BR-AntonioNeural"), dest)); print("edge", dest)
+                  except Exception as e:
+                      print("edge falhou:", e, "-> gTTS")
+                      gTTS(fala, lang="pt", tld="com.br").save(dest); print("gtts", dest)
+          PY
+      - name: Commit
+        run: |
+          git config user.name "voz-bot"; git config user.email "bot@users.noreply.github.com"
+          git add voz
+          git diff --cached --quiet || (git commit -m "Voz: narração gerada" && git pull --rebase origin main && git push)
