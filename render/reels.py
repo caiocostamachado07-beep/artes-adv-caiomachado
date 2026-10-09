@@ -11,7 +11,7 @@ import numpy as np
 W,HH=1080,1920; M=64
 from PIL import ImageDraw
 def photo_bg(foto):
-    im=Image.open(f"{c.R}/fotos/{foto}").convert("RGB")
+    im=Image.open(f"{c.R}/{foto}" if foto.startswith("banco/") else f"{c.R}/fotos/{foto}").convert("RGB")
     s=max(W/im.width,HH/im.height); im=im.resize((int(im.width*s)+1,int(im.height*s)+1),Image.LANCZOS)
     x=(im.width-W)//2; im=im.crop((x,0,x+W,HH))
     ys=np.arange(HH); t=np.clip((ys-HH*0.30)/(HH*0.26),0,1); g=t*t*(3-2*t)

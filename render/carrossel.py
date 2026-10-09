@@ -20,7 +20,7 @@ def wrap(d,text,font,maxw):
     if cur: lines.append(cur)
     return lines
 def photo_bg(foto,crop_y=0,strength=1.0):
-    im=Image.open(f"{R}/fotos/{foto}").convert("RGB")
+    im=Image.open(f"{R}/{foto}" if foto.startswith("banco/") else f"{R}/fotos/{foto}").convert("RGB")
     s=W/im.width; im=im.resize((W,int(im.height*s)),Image.LANCZOS); im=im.crop((0,crop_y,W,crop_y+H))
     ys=np.arange(H); t=np.clip((ys-H*0.22)/(H*0.32),0,1); g=t*t*(3-2*t)
     top=np.clip(1-ys/(H*0.16),0,1)*0.8

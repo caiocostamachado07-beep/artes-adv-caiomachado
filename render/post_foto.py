@@ -12,7 +12,7 @@ def sans(w,s): return ImageFont.truetype(f"{R}/fontes/Poppins-{w}.ttf",s)
 def serif(s):
     f=ImageFont.truetype(f"{R}/fontes/Lora-Variable.ttf",s); f.set_variation_by_name("Bold"); return f
 def make(sp):
-    im=Image.open(f"{R}/fotos/{sp['foto']}").convert("RGB")
+    im=Image.open(f"{R}/{sp['foto']}" if sp['foto'].startswith('banco/') else f"{R}/fotos/{sp['foto']}").convert("RGB")
     s=W/im.width; im=im.resize((W,int(im.height*s)),Image.LANCZOS)
     cy0=sp.get("crop_y",0); im=im.crop((0,cy0,W,cy0+H))
     ys=np.arange(H)
