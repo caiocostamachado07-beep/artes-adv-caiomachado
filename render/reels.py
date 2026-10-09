@@ -72,17 +72,22 @@ def make(sp):
     frames+=[(f_pag(p),sp.get("seg_pagina",5.5)) for p in sp["paginas"]]
     frames+=[(f_final(sp),sp.get("seg_final",4.5))]
     tmp=tempfile.mkdtemp(); clips=[]
+    vozdir=f"{R}/voz/{sp['arquivo']}"
+    def dur_audio(p):
+        return float(subprocess.check_output(["ffprobe","-v","error","-show_entries","format=duration","-of","csv=p=0",p]).decode().strip())
     for i,(im,dur) in enumerate(frames):
-        png=f"{tmp}/f{i}.png"; to_reels(im).save(png); mp=f"{tmp}/c{i}.mp4"
+        mp3=f"{vozdir}/{i+1:02d}.mp3"; tem_voz=os.path.exists(mp3)
+        if tem_voz: dur=max(dur,round(dur_audio(mp3)+0.7,2))   # tela dura o tempo da fala + respiro
+        png=f"{tmp}/f{i}.png"; im.save(png); mp=f"{tmp}/c{i}.mp4"
         vf=(f"scale=1134:2016,crop=1080:1920:x='54*t/{dur}':y='96*t/{dur}',"
             f"fade=t=in:st=0:d=0.35,fade=t=out:st={dur-0.35}:d=0.35,format=yuv420p")
-        subprocess.run(["ffmpeg","-y","-loglevel","error","-loop","1","-t",str(dur),"-i",png,"-vf",vf,"-r","30","-c:v","libx264","-crf","20","-preset","veryfast",mp],check=True)
-        clips.append(mp)
-        if i==0: im.save(f"{tmp}/capa.png")
+        cmd=["ffmpeg","-y","-loglevel","error","-loop","1","-t",str(dur),"-i",png]
+        cmd+=(["-i",mp3] if tem_voz else ["-f","lavfi","-t",str(dur),"-i","anullsrc=r=44100:cl=stereo"])
+        cmd+=["-vf",vf,"-af",f"apad=whole_dur={dur},aresample=44100,aformat=channel_layouts=stereo","-t",str(dur),"-r","30","-c:v","libx264","-crf","20","-preset","veryfast","-c:a","aac","-b:a","128k","-ar","44100",mp]
+        subprocess.run(cmd,check=True); clips.append(mp)
     lst=f"{tmp}/l.txt"; open(lst,"w").write("".join(f"file '{x}'\n" for x in clips))
     os.makedirs(f"{R}/reels",exist_ok=True); out=f"{R}/reels/{sp['arquivo']}.mp4"
-    subprocess.run(["ffmpeg","-y","-loglevel","error","-f","concat","-safe","0","-i",lst,"-f","lavfi","-i","anullsrc=r=44100:cl=stereo",
-        "-shortest","-c:v","libx264","-crf","22","-preset","medium","-pix_fmt","yuv420p","-c:a","aac","-b:a","96k","-movflags","+faststart",out],check=True)
+    subprocess.run(["ffmpeg","-y","-loglevel","error","-f","concat","-safe","0","-i",lst,"-c","copy","-movflags","+faststart",out],check=True)
     cap=f"{R}/reels/{sp['arquivo']}-capa.jpg"; to_reels(frames[0][0]).save(cap,quality=90)
     print(out); print(cap); print("frames:",tmp)
 if __name__=="__main__": make(json.load(open(sys.argv[1])))
