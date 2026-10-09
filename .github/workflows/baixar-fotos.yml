@@ -1,0 +1,31 @@
+name: Baixar fotos do banco de imagens
+# Lê banco/pedidos.json (lista de {tema, id, url}) e baixa as fotos para banco/<tema>/<id>.jpg
+on:
+  push:
+    paths: ["banco/pedidos.json"]
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  baixar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Baixar
+        run: |
+          python3 - <<'PY'
+          import json, os, urllib.request
+          pedidos = json.load(open("banco/pedidos.json"))
+          for p in pedidos:
+              d = f"banco/{p['tema']}"; os.makedirs(d, exist_ok=True)
+              dest = f"{d}/{p['id']}.jpg"
+              if os.path.exists(dest): continue
+              req = urllib.request.Request(p["url"], headers={"User-Agent": "Mozilla/5.0"})
+              with urllib.request.urlopen(req, timeout=60) as r, open(dest, "wb") as f: f.write(r.read())
+              print("ok", dest)
+          PY
+      - name: Commit
+        run: |
+          git config user.name "fotos-bot"; git config user.email "bot@users.noreply.github.com"
+          git add banco
+          git diff --cached --quiet || (git commit -m "Banco: novas fotos baixadas" && git pull --rebase origin main && git push)
