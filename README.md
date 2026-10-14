@@ -11,3 +11,6 @@ Repositório público usado pela rotina semanal de conteúdo (Claude + Metricool
 - Faça commit e push só do banco/pedidos.json: o GitHub Actions (.github/workflows/baixar-fotos.yml) baixa a imagem para banco/<tema>/<id>.jpg e faz commit (leva ~40 s). Depois rode git pull --rebase origin main.
 - Nos JSON de render use "foto": "banco/<tema>/<id>.jpg". Escolha fotos em que o assunto esteja na parte de cima (a metade de baixo some no degradê); ajuste crop_y se precisar e OLHE o resultado.
 - Mistura: capa com a foto do tema e a página final com foto do Caio (ou o contrário). O Reels e o post foto também aceitam banco/.
+
+## Ideias guardadas para próximos conteúdos
+- Voo atrasado/cancelado (ANAC 400/2016 e Res. 813/2026, válida a partir de 26/10/2026): o carrossel de 14/10 saiu sem foto do tema. Refazer em um próximo carrossel com foto pública de aeroporto/avião (Unsplash, "airport Brazil") na capa e foto do Caio na página final. Verificar de novo a regra vigente antes de publicar.
