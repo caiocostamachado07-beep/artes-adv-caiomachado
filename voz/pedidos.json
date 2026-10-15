@@ -1,6 +1,24 @@
-[{"arquivo":"2026-10-16-reels-compra-online","voz":"pt-BR-AntonioNeural","falas":[
-"Comprou pela internet? Você pode desistir da compra em até sete dias.",
-"Isso vale para compras feitas fora da loja física, como internet, telefone ou aplicativo. É o direito de arrependimento, previsto no artigo quarenta e nove do Código de Defesa do Consumidor.",
-"O prazo conta da assinatura do contrato ou do recebimento do produto. E você não precisa explicar o motivo.",
-"Todo o dinheiro pago deve ser devolvido, com correção, inclusive o frete, se ele foi cobrado. Peça o cancelamento por escrito e guarde o protocolo.",
-"Ficou com dúvida? Fala comigo que eu te oriento."]}]
+[
+ {
+  "arquivo": "2026-10-16-reels-compra-online",
+  "voz": "pt-BR-AntonioNeural",
+  "falas": [
+   "Comprou pela internet? Você pode desistir da compra em até sete dias.",
+   "Isso vale para compras feitas fora da loja física, como internet, telefone ou aplicativo. É o direito de arrependimento, previsto no artigo quarenta e nove do Código de Defesa do Consumidor.",
+   "O prazo conta da assinatura do contrato ou do recebimento do produto. E você não precisa explicar o motivo.",
+   "Todo o dinheiro pago deve ser devolvido, com correção, inclusive o frete, se ele foi cobrado. Peça o cancelamento por escrito e guarde o protocolo.",
+   "Ficou com dúvida? Fala comigo que eu te oriento."
+  ]
+ },
+ {
+  "arquivo": "2026-10-30-reels-venda-casada",
+  "voz": "pt-BR-AntonioNeural",
+  "falas": [
+   "Venda casada é proibida. Você não é obrigado a levar outro produto junto.",
+   "Venda casada é condicionar a venda de um produto à compra de outro, ou à contratação de um serviço. É prática abusiva, prevista no artigo trinta e nove, inciso primeiro, do Código de Defesa do Consumidor.",
+   "Acontece, por exemplo, quando só vendem o que você quer se você levar outro item junto, ou quando exigem um serviço a mais para liberar o crédito.",
+   "Se isso acontecer, recuse o item extra, peça só o que você quer e guarde contrato, nota e conversas. Você também pode reclamar no Procon.",
+   "Ficou com dúvida? Fala comigo que eu te oriento."
+  ]
+ }
+]
