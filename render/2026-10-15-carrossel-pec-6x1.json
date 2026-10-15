@@ -1,0 +1,78 @@
+{
+ "arquivo": "2026-10-15-carrossel-pec-6x1",
+ "kicker": "DIREITO DO TRABALHO",
+ "capa": {
+  "foto": "banco/escala6x1/23lU2ct_cNs.jpg",
+  "l1": "Fim da escala 6x1:",
+  "l2": "o que muda?",
+  "pill": "Senado aprovou a PEC em 14/10"
+ },
+ "paginas": [
+  {
+   "destaque": "75 a 1",
+   "titulo": "O que foi aprovado",
+   "itens": [
+    "O Senado aprovou a PEC 221/2019 em dois turnos, por 75 votos a 1",
+    "A Câmara já tinha aprovado em maio. Agora a PEC vai para promulgação pelo Congresso, sem sanção do Presidente"
+   ],
+   "nota": "Atenção: as regras ainda não estão valendo."
+  },
+  {
+   "destaque": "40h",
+   "titulo": "Jornada menor",
+   "itens": [
+    "Limite de 8 horas por dia e 40 horas por semana. Hoje o limite é de 44 horas",
+    "A redução da jornada não pode diminuir o seu salário"
+   ]
+  },
+  {
+   "destaque": "2",
+   "titulo": "Duas folgas por semana",
+   "itens": [
+    "Dois dias de descanso remunerado por semana, no lugar de um",
+    "As folgas não precisam ser em dias seguidos"
+   ]
+  },
+  {
+   "destaque": "Domingo",
+   "titulo": "Trabalho aos domingos",
+   "itens": [
+    "Domingo trabalhado deve ser compensado com folga ou como prever lei ou acordo coletivo",
+    "Sem compensação, deve ser pago em dobro"
+   ],
+   "nota": "Escalas como a 12x36 continuam permitidas."
+  },
+  {
+   "destaque": "Quando?",
+   "titulo": "A mudança é por etapas",
+   "itens": [
+    "60 dias após a promulgação: limite de 42 horas semanais",
+    "12 meses depois: limite de 40 horas semanais"
+   ],
+   "nota": "Os prazos só começam a contar depois da promulgação."
+  },
+  {
+   "destaque": "Exceção",
+   "titulo": "Quem fica fora do controle de jornada",
+   "itens": [
+    "Quem tem diploma de nível superior e ganha pelo menos 2,5 vezes o teto do INSS (cerca de R$ 21,2 mil)",
+    "Empresa ou acordo coletivo ainda pode prever controle de ponto"
+   ]
+  },
+  {
+   "destaque": "Agora",
+   "titulo": "O que fazer enquanto isso",
+   "itens": [
+    "Guarde holerites, contrato e registros de ponto",
+    "Acompanhe os acordos do seu sindicato",
+    "Salário reduzido por causa da nova jornada? Procure orientação"
+   ]
+  }
+ ],
+ "final": {
+  "foto": "foto23-retrato-terno-azul-gravata-verde-janela.png",
+  "l1": "Ficou com dúvida?",
+  "l2": "Fale comigo!",
+  "sub": "Eu te oriento no seu caso."
+ }
+}
