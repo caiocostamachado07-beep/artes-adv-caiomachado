@@ -41,6 +41,7 @@ def marca(d,y,cx=W//2):
     d.line((cx-150,y+58,cx+150,y+58),fill=TERRA,width=2)
     f2=sans("Regular",20); t2="A D V O C A C I A"; d.text((cx-d.textlength(t2,font=f2)/2,y+70),t2,font=f2,fill=TXT)
 def contador(d,num,total):
+    return  # sem numeração (pedido do Caio)
     t=f"{num}/{total}"; f=sans("Medium",28); tw=d.textlength(t,font=f)
     d.rounded_rectangle((W-60-tw-44,54,W-60,108),radius=27,fill=NAVY); d.text((W-60-tw-22,62),t,font=f,fill=BEIGE)
 def kick(d,k): d.text((M,68),k,font=sans("Medium",24),fill=TERRA)
