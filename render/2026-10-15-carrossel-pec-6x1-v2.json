@@ -1,0 +1,76 @@
+{
+ "arquivo": "2026-10-15-pec-6x1-v2",
+ "kicker": "DIREITO DO TRABALHO",
+ "capa": {
+  "foto": "banco/escala6x1/HaZhm6xIUgs.jpg",
+  "crop_x": 0.6,
+  "crop_y": 0.5,
+  "chamada": "PEC aprovada",
+  "titulo": "Fim da escala 6x1:|o que muda?",
+  "texto": "O Senado aprovou a proposta que prevê **dois dias de folga por semana** e redução da jornada, **sem diminuição salarial.**",
+  "cta": "Passe para o lado e entenda as novas regras"
+ },
+ "paginas": [
+  {
+   "titulo": "De 6x1 para 5x2",
+   "paragrafos": [
+    "A proposta prevê até cinco dias de trabalho e **dois dias de descanso remunerado** por semana.",
+    "As folgas não precisam ser seguidas, mas uma delas deve ser, **preferencialmente, aos domingos.**",
+    "A mudança também vale para os contratos de trabalho **já existentes.**"
+   ]
+  },
+  {
+   "titulo": "Jornada menor, sem redução salarial",
+   "sub": "A redução será gradual:",
+   "paragrafos": [
+    "• Hoje: até **44 horas** semanais.",
+    "• 60 dias após a promulgação: até **42 horas.**",
+    "• 14 meses após a promulgação: até **40 horas**, com limite de 8h por dia."
+   ]
+  },
+  {
+   "titulo": "Trabalho aos sábados, domingos e feriados",
+   "sub": "Ainda será permitido?",
+   "paragrafos": [
+    "**Sim, desde que sejam respeitados os limites semanais** de jornada e as duas folgas.",
+    "**O domingo trabalhado** deve ser compensado com folga. Sem compensação, deve ser **pago em dobro.**"
+   ]
+  },
+  {
+   "titulo": "Quem já trabalha de segunda a sexta também ganha?",
+   "paragrafos": [
+    "**Sim.** Quem cumpre 44 horas semanais terá a jornada reduzida para 42 horas e, depois, para **40 horas, sem redução salarial.**",
+    "Quem já trabalha 40 horas ou menos não tem mudança."
+   ]
+  },
+  {
+   "titulo": "E as escalas especiais, como a 12x36?",
+   "paragrafos": [
+    "A proposta **mantém** a escala 12x36 e os regimes especiais.",
+    "Setores que já funcionam aos domingos e atividades contínuas, como saúde e segurança, **continuam com regras específicas de jornada.**"
+   ]
+  },
+  {
+   "titulo": "Há exceções?",
+   "paragrafos": [
+    "Sim. A redução de jornada não será obrigatória para quem tem **diploma de nível superior e salário de pelo menos 2,5 vezes o teto do INSS** (cerca de R$ 21,2 mil), salvo acordo coletivo ou decisão da empresa.",
+    "**O direito ao descanso continua garantido.**"
+   ]
+  },
+  {
+   "titulo": "O que acontece agora?",
+   "paragrafos": [
+    "A PEC já foi aprovada pela Câmara e pelo Senado, mas as regras **ainda não estão valendo.** O próximo passo é a **promulgação pelo Congresso Nacional.**",
+    "As empresas terão que ajustar escalas e jornadas, respeitando também os **acordos e convenções coletivas.**"
+   ]
+  }
+ ],
+ "final": {
+  "foto": "foto23-retrato-terno-azul-gravata-verde-janela.png",
+  "crop_x": 0.35,
+  "crop_y": 0.1,
+  "l1": "Ficou com dúvida?",
+  "l2": "Fale comigo!",
+  "texto": "Me chama no direct que eu te oriento no seu caso."
+ }
+}
