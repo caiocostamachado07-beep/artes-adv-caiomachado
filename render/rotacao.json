@@ -1,0 +1,22 @@
+{
+ "_leia": "Estado da rotação. A tarefa semanal LÊ este arquivo, usa o 'proximo' de cada ciclo para cada peça criada (na ordem de publicação) e AVANÇA o índice (volta a 0 no fim). Salve e faça commit junto com as artes.",
+ "areas": {
+  "ciclo": ["Direito do Consumidor", "Direito Previdenciário", "Direito Tributário e Imposto de Renda", "Direito Digital e LGPD", "Direito do Consumidor", "Direito Previdenciário", "Direito Sucessório (herança, inventário, testamento)", "Direito de Vizinhança", "Compliance"],
+  "proximo": 1
+ },
+ "posts_comuns": {
+  "_regra": "post de imagem única (segunda e sexta): 3 com foto pública do banco de imagens, 1 com foto do Caio",
+  "ciclo": ["publica", "publica", "publica", "caio"],
+  "proximo": 2
+ },
+ "carrossel": {
+  "_regra": "publica_total = capa, uma página do meio e final com foto pública; caio = capa e final com foto do Caio; misto_a = capa pública e final do Caio; misto_b = capa do Caio e final pública",
+  "ciclo": ["publica_total", "publica_total", "caio", "misto_a", "misto_b"],
+  "proximo": 0
+ },
+ "historico": [
+  "2026-10-26 post comum: publica (defeito) | area Consumidor",
+  "2026-10-28 carrossel: misto_a (plano de saúde) | area Consumidor",
+  "2026-10-30 post comum (substituiu o Reels): publica (venda casada) | area Consumidor"
+ ]
+}

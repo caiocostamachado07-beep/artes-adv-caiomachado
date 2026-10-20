@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 """Gera carrossel 1080x1350 do @adv.caiomachado a partir de um JSON.
 Uso: python3 render/carrossel.py spec.json  ->  arte/<arquivo>-01.png ... -NN.png
-Spec: arquivo, kicker, capa{foto,l1,l2,pill}, paginas[{destaque,titulo,itens[],nota?}], final{foto,l1,l2,sub}"""
+Spec: arquivo, kicker, capa{foto,l1,l2,pill}, paginas[{destaque,titulo,itens[],nota?,foto?,crop_y?}], final{foto,l1,l2,sub}
+Página com "foto": vira página com foto ao fundo (use NO MÁXIMO 1 ou 2 itens bem curtos, sem nota)."""
 import json, os, sys
 from PIL import Image, ImageDraw, ImageFont
 import numpy as np
@@ -53,13 +54,19 @@ def capa(sp,total):
     footer(d,"Arraste para o lado →")
     return im.convert("RGB")
 def pagina(p,num,total,kicker):
-    im=Image.new("RGBA",(W,H),NAVY+(255,)); d=ImageDraw.Draw(im)
-    # faixa decorativa sutil
-    d.rectangle((0,0,W,6),fill=TERRA)
-    header(d,None,num,total)
-    y=190
-    if p.get("destaque"):
-        f=serif(210); d.text((M-4,y),p["destaque"],font=f,fill=TERRA); y+=290
+    if p.get("foto"):  # página do meio com foto (assunto na metade de cima)
+        im=photo_bg(p["foto"],p.get("crop_y",0)); d=ImageDraw.Draw(im)
+        header(d,None,num,total); y=470
+        if p.get("destaque"):
+            f=serif(130); d.text((M-4,y),p["destaque"],font=f,fill=ROSE); y+=170
+    else:
+        im=Image.new("RGBA",(W,H),NAVY+(255,)); d=ImageDraw.Draw(im)
+        # faixa decorativa sutil
+        d.rectangle((0,0,W,6),fill=TERRA)
+        header(d,None,num,total)
+        y=190
+        if p.get("destaque"):
+            f=serif(210); d.text((M-4,y),p["destaque"],font=f,fill=TERRA); y+=290
     tf=serif(68)
     for ln in wrap(d,p["titulo"],tf,W-2*M):
         d.text((M,y),ln,font=tf,fill=BEIGE); y+=86

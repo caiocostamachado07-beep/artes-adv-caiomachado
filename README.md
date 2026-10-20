@@ -14,3 +14,11 @@ Repositório público usado pela rotina semanal de conteúdo (Claude + Metricool
 
 ## Ideias guardadas para próximos conteúdos
 - Voo atrasado/cancelado (ANAC 400/2016 e Res. 813/2026, válida a partir de 26/10/2026): o carrossel de 14/10 saiu sem foto do tema. Refazer em um próximo carrossel com foto pública de aeroporto/avião (Unsplash, "airport Brazil") na capa e foto do Caio na página final. Verificar de novo a regra vigente antes de publicar.
+
+## Regras de conteúdo (atualizadas em 20/10/2026, pedido do Caio)
+- **Reels suspensos.** Na sexta das semanas que antes tinham Reels (12/10, 26/10, 09/11... uma sim, outra não) entra um **post comum de imagem única** (render/post_foto.py), não carrossel.
+- **Mais fotos públicas do que do Caio.** O estado das rotações está em `render/rotacao.json`:
+  - Posts comuns: 3 com foto pública (banco/), 1 com foto do Caio, e repete.
+  - Carrosséis: 2 com foto pública na capa, numa página do meio e no final; 1 com capa e final do Caio; 2 mesclando (capa pública + final do Caio; capa do Caio + final pública); repete.
+  - Página do meio com foto: no JSON do carrossel, ponha `"foto": "banco/<tema>/<id>.jpg"` (e `crop_y` se precisar) na página, com 1 item curto e sem nota.
+- **Áreas em rodízio por peça** (ver `areas` em rotacao.json): Consumidor, Previdenciário, Tributário e Imposto de Renda, Digital e LGPD, Consumidor, Previdenciário, Sucessório, Vizinhança, Compliance.
