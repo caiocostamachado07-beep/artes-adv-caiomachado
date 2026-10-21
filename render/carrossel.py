@@ -21,14 +21,27 @@ def wrap(d,text,font,maxw):
     if cur: lines.append(cur)
     return lines
 def photo_bg(foto,crop_y=0,strength=1.0):
-    im=Image.open(f"{R}/{foto}" if foto.startswith("banco/") else f"{R}/fotos/{foto}").convert("RGB")
-    s=W/im.width; im=im.resize((W,int(im.height*s)),Image.LANCZOS); im=im.crop((0,crop_y,W,crop_y+H))
-    ys=np.arange(H); t=np.clip((ys-H*0.22)/(H*0.32),0,1); g=t*t*(3-2*t)
+    """Fundo com foto e degradê azul-marinho.
+    Foto do banco (banco/...): ocupa a largura toda; o assunto deve estar na metade de cima.
+    Foto do Caio (fotos/...): reduzida e encostada à direita, com o ROSTO INTEIRO acima do texto
+    (o degradê só começa abaixo do queixo). Nunca cortar o rosto com o degradê."""
+    caio=not foto.startswith("banco/")
+    im=Image.open(f"{R}/{foto}" if not caio else f"{R}/fotos/{foto}").convert("RGB")
+    if caio:
+        w=int(W*0.80); h=int(im.height*w/im.width); im=im.resize((w,h),Image.LANCZOS)
+        canvas=Image.new("RGB",(W,H),NAVY); x0=W-w; y0=-40-crop_y
+        xs=np.arange(w)/w; ax=np.clip(xs/0.30,0,1); ax=ax*ax*(3-2*ax)
+        mask=Image.fromarray((np.ones((h,1))*ax[None,:]*255).astype("uint8"),"L")
+        canvas.paste(im,(x0,y0),mask); im=canvas; g0,g1=0.40,0.20
+    else:
+        s=W/im.width; im=im.resize((W,int(im.height*s)),Image.LANCZOS); im=im.crop((0,crop_y,W,crop_y+H)); g0,g1=0.22,0.32
+    ys=np.arange(H); t=np.clip((ys-H*g0)/(H*g1),0,1); g=t*t*(3-2*t)
     top=np.clip(1-ys/(H*0.16),0,1)*0.8
     a=np.clip(np.maximum(g,top),0,0.985)[:,None]*np.ones((1,W))
     arr=np.array(im,dtype=np.float32)*(1-a[...,None])+np.array(NAVY,dtype=np.float32)*a[...,None]
     return Image.fromarray(arr.astype("uint8")).convert("RGBA")
 def header(d,kicker=None,num=None,total=None):
+    num=None  # sem numeração: o Instagram já mostra (pedido do Caio)
     d.text((M,56),"CAIO MACHADO",font=sans("Medium",26),fill=WHITE)
     d.text((M,90),"ADVOCACIA",font=sans("Light",20),fill=BEIGE)
     if kicker:
