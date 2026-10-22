@@ -1,0 +1,51 @@
+{
+ "arquivo": "2026-11-04-carrossel-ir-isencao-5mil",
+ "kicker": "DIREITO TRIBUTÁRIO",
+ "capa": {
+  "foto": "banco/imposto/wBKWM-DLhzg.jpg",
+  "l1": "Imposto de Renda",
+  "l2": "até R$ 5 mil",
+  "pill": "O que mudou em 2026",
+  "crop_y": 260
+ },
+ "paginas": [
+  {
+   "destaque": "A regra",
+   "titulo": "Isenção até R$ 5 mil por mês",
+   "itens": [
+    "Lei 15.270/2025, válida desde janeiro de 2026",
+    "Quem recebe até R$ 5.000 por mês em rendimentos tributáveis não paga IRPF"
+   ]
+  },
+  {
+   "destaque": "Faixa média",
+   "titulo": "De R$ 5.000,01 a R$ 7.350",
+   "foto": "banco/imposto/4rTXOMv28VA.jpg",
+   "itens": [
+    "A redução do imposto diminui até zerar"
+   ],
+   "crop_y": 0
+  },
+  {
+   "destaque": "Depois",
+   "titulo": "Acima de R$ 7.350: tabela normal",
+   "itens": [
+    "Sem a redução, o cálculo segue a tabela progressiva do IRPF"
+   ]
+  },
+  {
+   "destaque": "Atenção",
+   "titulo": "Isento na fonte não é dispensa de declarar",
+   "itens": [
+    "A obrigatoriedade de declarar tem regras próprias, definidas pela Receita Federal a cada ano"
+   ],
+   "nota": "Cada caso tem detalhes: a regra depende da sua renda."
+  }
+ ],
+ "final": {
+  "foto": "banco/imposto/ZA6DgNbXxro.jpg",
+  "l1": "Ficou com dúvida?",
+  "l2": "Fale comigo!",
+  "sub": "Eu te oriento no seu caso."
+ }
+}
