@@ -12,7 +12,7 @@
    "Direito de Vizinhança",
    "Compliance"
   ],
-  "proximo": 3
+  "proximo": 6
  },
  "posts_comuns": {
   "_regra": "post de imagem única (segunda e sexta): 3 com foto pública do banco de imagens, 1 com foto do Caio",
@@ -22,7 +22,7 @@
    "publica",
    "caio"
   ],
-  "proximo": 3
+  "proximo": 1
  },
  "carrossel": {
   "_regra": "publica_total = capa, uma página do meio e final com foto pública; caio = capa e final com foto do Caio; misto_a = capa pública e final do Caio; misto_b = capa do Caio e final pública",
@@ -33,13 +33,16 @@
    "misto_a",
    "misto_b"
   ],
-  "proximo": 1
+  "proximo": 2
  },
  "historico": [
   "2026-10-26 post comum: publica (defeito) | area Consumidor",
   "2026-10-28 carrossel: misto_a (plano de saúde) | area Consumidor",
   "2026-10-30 post comum (substituiu o Reels): publica (venda casada) | area Consumidor",
   "2026-11-02 post comum: publica (pensão por morte, art. 74) | area Previdenciário",
-  "2026-11-04 carrossel: publica_total (IR isenção até R$ 5 mil, Lei 15.270/2025) | area Tributário e IR"
+  "2026-11-04 carrossel: publica_total (IR isenção até R$ 5 mil, Lei 15.270/2025) | area Tributário e IR",
+  "2026-11-09 post comum: caio (foto19-sentado-mesa-notebook) (vazamento de dados, LGPD) | area Digital e LGPD",
+  "2026-11-11 carrossel: publica_total (Black Friday, CDC) | area Consumidor",
+  "2026-11-13 post comum: publica (BPC/LOAS, Lei 8.742/93 art. 20) | area Previdenciário"
  ]
 }

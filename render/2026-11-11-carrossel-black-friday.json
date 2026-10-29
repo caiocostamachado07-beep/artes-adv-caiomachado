@@ -1,0 +1,12 @@
+{
+ "arquivo": "2026-11-11-carrossel-black-friday",
+ "kicker": "DIREITO DO CONSUMIDOR",
+ "capa": {"foto": "banco/blackfriday/aQOm_2cadQs.jpg", "l1": "Black Friday", "l2": "seus direitos", "pill": "Antes de comprar", "crop_y": 110},
+ "paginas": [
+  {"destaque": "Oferta", "titulo": "Oferta anunciada vincula a loja", "itens": ["Preço e condições anunciados devem ser cumpridos (CDC, arts. 30 e 35)", "Guarde prints do anúncio"]},
+  {"destaque": "Compra online", "titulo": "Você pode desistir em 7 dias", "foto": "banco/blackfriday/N7U-_EN81tE.jpg", "itens": ["Sem precisar justificar (CDC, art. 49)"], "crop_y": 0},
+  {"destaque": "Cuidado", "titulo": "Propaganda enganosa é proibida", "itens": ["Informação falsa ou que induz ao erro é prática abusiva (CDC, art. 37)", "Confira o site e os dados do vendedor"]},
+  {"destaque": "Defeito", "titulo": "Produto com defeito ou não entregue", "itens": ["Guarde nota, prints e protocolos", "Reclame no SAC e, se preciso, no Procon"], "nota": "Cada caso tem detalhes: a regra depende da sua compra."}
+ ],
+ "final": {"foto": "banco/blackfriday/6v_HOmh5tcM.jpg", "crop_y": 620, "l1": "Ficou com dúvida?", "l2": "Fale comigo!", "sub": "Eu te oriento no seu caso."}
+}
