@@ -202,7 +202,7 @@ def certo_errado(t, k):
     footer(d, False); return im
 def pergunta(t, k):
     im, d = base(True); header(d, True, k)
-    d.text((M, 150), "ME PERGUNTARAM", font=sans("Bold", 28), fill=ROSE)
+    d.text((M, 150), t.get("rotulo", "PERGUNTA FREQUENTE"), font=sans("Bold", 28), fill=ROSE)
     f = sans("Medium", 40); ls = wrap(d, t["pergunta"], f, W - 2 * M - 80); h = len(ls) * 56 + 70
     d.rounded_rectangle((M, 210, W - M, 210 + h), radius=36, fill=WHITE)
     d.polygon([(M + 60, 210 + h - 2), (M + 120, 210 + h - 2), (M + 50, 210 + h + 50)], fill=WHITE)

@@ -42,3 +42,9 @@ Amostras: `render/amostras/estilos-7dias.json` e `render/amostras/claro-7dias.js
 - **numero**: estilos.py, tela "numero" com foto pública no alto (ex.: "7 dias", "R$ 5 mil"). Post comum = 1 tela.
 - **lei_checklist** (carrossel): "moldura" (capa) + "lei" + "moldura" + "checklist" + "final".
 Em todos: só fotos públicas, convite "Fale comigo!" no rodapé, revisão de cada PNG antes de agendar. Post comum feito com estilos.py gera arte/<arquivo>-01.png (use essa URL).
+
+### Estilos extras (aprovados em 11/11/2026, também no rodízio)
+Amostras: `render/amostras/estilos-extras.json` (imagens `arte/amostra-extra-*.png`). Todos em estilos.py.
+- **timeline** (3 a 4 marcos com prazos), **certo_errado** (3 itens por coluna), **pergunta** (rótulo padrão "PERGUNTA FREQUENTE"; use rotulo "ME PERGUNTARAM" só com pergunta real enviada pelo Caio), **juridiques** (termo + significado + exemplo), **tabela** (até 6 linhas), **fluxo** (2 a 3 perguntas Sim/Não + resultado). Post comum = 1 tela; foto dispensável.
+- Carrosséis novos: **passo_a_passo** = "moldura" (capa) + "timeline" + "certo_errado" + "fluxo" ou "tabela" + "final"; **perguntas** = "moldura" (capa) + 2 a 3 telas "pergunta" + "juridiques" + "final".
+- **mudou_lei**: fora do ciclo; só quando houver novidade legal real e recente (confirmada em fonte oficial ou grande veículo), no lugar do estilo da vez, sem avançar o ciclo.
