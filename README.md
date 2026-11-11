@@ -23,3 +23,9 @@ Repositório público usado pela rotina semanal de conteúdo (Claude + Metricool
   - Página do meio com foto: no JSON do carrossel, ponha `"foto": "banco/<tema>/<id>.jpg"` (e `crop_y` se precisar) na página, com 1 item curto e sem nota.
 - **Áreas em rodízio por peça** (ver `areas` em rotacao.json): Consumidor, Previdenciário, Tributário e Imposto de Renda, Digital e LGPD, Consumidor, Previdenciário, Sucessório, Vizinhança, Compliance.
 - **Fotos do Caio no carrossel (corrigido em 21/10/2026):** o gerador agora reduz a foto dele e deixa o rosto inteiro acima do texto; o degradê nunca pode cortar o rosto. Capa e final do mesmo carrossel devem ter **roupas/sessões diferentes** (ex.: não usar duas de "blazer bege"; compare os nomes dos arquivos). Sem numeração de páginas (o Instagram já mostra).
+
+## Regra de fotos (atualizada em 11/11/2026, pedido do Caio) — SUBSTITUI as regras de fotos anteriores
+- **NÃO usar mais fotos do Caio** (pasta fotos/) em nenhuma peça. Só fotos públicas do banco (Unsplash → banco/).
+- **Post comum:** sempre foto pública do tema.
+- **Carrossel com mais imagens:** capa, final e pelo menos 2 páginas do meio com foto (alternando página com foto e página só texto). Todas as fotos diferentes entre si e ligadas ao tema.
+- Foto com pessoa: o rosto não pode ficar sob o texto/degradê; se ficar, troque a foto (prefira objetos, lugares e mãos).

@@ -1,0 +1,53 @@
+{
+ "arquivo": "2026-11-18-carrossel-barulho-vizinho-v2",
+ "kicker": "DIREITO DE VIZINHANÇA",
+ "capa": {
+  "foto": "banco/vizinhanca/CNIjj8rGGTU.jpg",
+  "l1": "Barulho do",
+  "l2": "vizinho?",
+  "pill": "Saiba o que fazer"
+ },
+ "paginas": [
+  {
+   "destaque": "1º passo",
+   "titulo": "Registre o problema",
+   "itens": [
+    "Anote dia, hora e duração e guarde vídeos e áudios"
+   ],
+   "foto": "banco/vizinhanca/8eSrC43qdro.jpg",
+   "crop_y": 270
+  },
+  {
+   "destaque": "2º passo",
+   "titulo": "Tente resolver pelo diálogo",
+   "itens": [
+    "Converse com educação ou envie uma notificação por escrito",
+    "Em condomínio, avise o síndico"
+   ]
+  },
+  {
+   "destaque": "No prédio",
+   "titulo": "A convenção também vale",
+   "itens": [
+    "Respeitar o sossego é dever do condômino (CC, art. 1.336, IV); reincidência pode gerar multa (art. 1.337)"
+   ],
+   "foto": "banco/vizinhanca/zyjNlsWqcfI.jpg"
+  },
+  {
+   "destaque": "Depois",
+   "titulo": "Persistindo, há medidas",
+   "itens": [
+    "Pode-se pedir que cessem as interferências no sossego (Código Civil, art. 1.277)",
+    "O horário de silêncio varia conforme a lei local"
+   ],
+   "nota": "Cada caso tem detalhes: a regra depende da sua situação."
+  }
+ ],
+ "final": {
+  "foto": "banco/vizinhanca/1L4OscrIr9Y.jpg",
+  "l1": "Ficou com dúvida?",
+  "l2": "Fale comigo!",
+  "sub": "Eu te oriento no seu caso.",
+  "crop_y": -50
+ }
+}

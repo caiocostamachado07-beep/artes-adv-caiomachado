@@ -15,25 +15,18 @@
   "proximo": 8
  },
  "posts_comuns": {
-  "_regra": "post de imagem única (segunda e sexta): 3 com foto pública do banco de imagens, 1 com foto do Caio",
+  "_regra": "desde 11/11/2026: SEMPRE foto pública do banco de imagens (o Caio pediu para não usar mais fotos dele)",
   "ciclo": [
-   "publica",
-   "publica",
-   "publica",
-   "caio"
+   "publica"
   ],
-  "proximo": 2
+  "proximo": 0
  },
  "carrossel": {
-  "_regra": "publica_total = capa, uma página do meio e final com foto pública; caio = capa e final com foto do Caio; misto_a = capa pública e final do Caio; misto_b = capa do Caio e final pública",
+  "_regra": "desde 11/11/2026: SÓ fotos públicas e MAIS imagens: capa, final e pelo menos 2 páginas do meio com foto (alternar página com foto e página só texto); todas as fotos diferentes",
   "ciclo": [
-   "publica_total",
-   "publica_total",
-   "caio",
-   "misto_a",
-   "misto_b"
+   "publica_mais_imagens"
   ],
-  "proximo": 3
+  "proximo": 0
  },
  "historico": [
   "2026-10-26 post comum: publica (defeito) | area Consumidor",
@@ -45,6 +38,7 @@
   "2026-11-11 carrossel: publica_total (Black Friday, CDC) | area Consumidor",
   "2026-11-13 post comum: publica (BPC/LOAS, Lei 8.742/93 art. 20) | area Previdenciário",
   "2026-11-16 post comum: publica (inventário em cartório, CPC 610/611; banco/inventario/8RFiiNaA7V0) | area Sucessório",
-  "2026-11-18 carrossel: caio (barulho do vizinho, CC 1.277/1.336/1.337; capa foto17, final foto28) | area Vizinhança"
+  "2026-11-18 carrossel: caio (barulho do vizinho, CC 1.277/1.336/1.337; capa foto17, final foto28) | area Vizinhança",
+  "2026-11-11: Caio pediu para parar de usar fotos dele; só banco público e mais imagens nos carrosséis. Carrossel 18/11 (barulho) refeito com 4 fotos públicas."
  ]
 }
