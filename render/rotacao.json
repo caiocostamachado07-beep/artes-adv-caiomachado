@@ -39,6 +39,36 @@
   "2026-11-13 post comum: publica (BPC/LOAS, Lei 8.742/93 art. 20) | area Previdenciário",
   "2026-11-16 post comum: publica (inventário em cartório, CPC 610/611; banco/inventario/8RFiiNaA7V0) | area Sucessório",
   "2026-11-18 carrossel: caio (barulho do vizinho, CC 1.277/1.336/1.337; capa foto17, final foto28) | area Vizinhança",
-  "2026-11-11: Caio pediu para parar de usar fotos dele; só banco público e mais imagens nos carrosséis. Carrossel 18/11 (barulho) refeito com 4 fotos públicas."
- ]
+  "2026-11-11: Caio pediu para parar de usar fotos dele; só banco público e mais imagens nos carrosséis. Carrossel 18/11 (barulho) refeito com 4 fotos públicas.",
+  "2026-11-11: Caio aprovou os 6 estilos novos (claro, moldura, mito x verdade, lei, checklist, número); alternar com o estilo atual."
+ ],
+ "estilos": {
+  "_regra": "desde 11/11/2026 o Caio aprovou todos os estilos: alternar estilo atual (escuro) com um estilo novo, peça a peça. Cada tipo de peça tem seu próprio ciclo.",
+  "post_comum": {
+   "ciclo": [
+    "atual",
+    "numero",
+    "atual",
+    "moldura",
+    "atual",
+    "lei",
+    "atual",
+    "checklist"
+   ],
+   "proximo": 0
+  },
+  "carrossel": {
+   "ciclo": [
+    "atual",
+    "claro",
+    "atual",
+    "mito",
+    "atual",
+    "moldura",
+    "atual",
+    "lei_checklist"
+   ],
+   "proximo": 0
+  }
+ }
 }

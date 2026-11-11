@@ -29,3 +29,16 @@ Repositório público usado pela rotina semanal de conteúdo (Claude + Metricool
 - **Post comum:** sempre foto pública do tema.
 - **Carrossel com mais imagens:** capa, final e pelo menos 2 páginas do meio com foto (alternando página com foto e página só texto). Todas as fotos diferentes entre si e ligadas ao tema.
 - Foto com pessoa: o rosto não pode ficar sob o texto/degradê; se ficar, troque a foto (prefira objetos, lugares e mãos).
+
+## Estilos (aprovados em 11/11/2026) — alternar com o estilo atual
+Ciclos em `render/rotacao.json` → `estilos` (um para post comum, outro para carrossel; avance o índice a cada peça).
+Amostras: `render/amostras/estilos-7dias.json` e `render/amostras/claro-7dias.json` (imagens em `arte/amostra-*.png`).
+- **atual**: post_foto.py / carrossel.py (fundo azul-marinho com foto grande).
+- **claro**: carrossel_claro.py (fundo bege, títulos em pergunta, **negrito**; capa e final com foto pública).
+- **moldura**: estilos.py, tela "moldura" (foto com cantos arredondados no alto, texto embaixo). Post comum = 1 tela moldura. Carrossel moldura = telas moldura (cada uma com foto diferente) + tela "final".
+- **mito**: estilos.py, carrossel: "mito_capa" + 2 a 4 telas "mito" + 1 tela "moldura" no meio + "final".
+- **lei**: estilos.py, tela "lei" (trecho literal da lei, conferido na fonte oficial, + "o que isso significa"). Post comum = 1 tela lei.
+- **checklist**: estilos.py, tela "checklist" (4 a 5 itens + nota). Post comum = 1 tela checklist.
+- **numero**: estilos.py, tela "numero" com foto pública no alto (ex.: "7 dias", "R$ 5 mil"). Post comum = 1 tela.
+- **lei_checklist** (carrossel): "moldura" (capa) + "lei" + "moldura" + "checklist" + "final".
+Em todos: só fotos públicas, convite "Fale comigo!" no rodapé, revisão de cada PNG antes de agendar. Post comum feito com estilos.py gera arte/<arquivo>-01.png (use essa URL).
