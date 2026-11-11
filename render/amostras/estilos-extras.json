@@ -1,0 +1,116 @@
+{
+ "arquivo": "amostra-extra",
+ "kicker": "DIREITO DO CONSUMIDOR",
+ "telas": [
+  {
+   "estilo": "timeline",
+   "titulo": "Compra online: os prazos que você precisa saber",
+   "marcos": [
+    [
+     "Dia 0",
+     "Você faz a compra ou **recebe o produto**."
+    ],
+    [
+     "Até o dia 7",
+     "Pode **desistir sem justificar** (CDC, art. 49). Avise a loja por escrito."
+    ],
+    [
+     "Depois de desistir",
+     "A loja deve devolver **todo o valor, inclusive o frete**, de imediato e com correção."
+    ],
+    [
+     "Produto com defeito",
+     "Você tem **90 dias** para reclamar de produto durável (CDC, art. 26)."
+    ]
+   ]
+  },
+  {
+   "estilo": "certo_errado",
+   "titulo": "Vai desistir da compra online?",
+   "certo": [
+    "Avisar a loja por escrito, dentro de 7 dias",
+    "Guardar print do pedido e do protocolo",
+    "Pedir a devolução de todo o valor"
+   ],
+   "errado": [
+    "Só avisar por telefone, sem registro",
+    "Deixar o prazo de 7 dias passar",
+    "Aceitar vale-compra se queria o dinheiro"
+   ]
+  },
+  {
+   "estilo": "pergunta",
+   "pergunta": "Comprei uma roupa pelo Instagram de uma loja e não gostei. Posso devolver?",
+   "resposta_curta": "Sim, em até 7 dias.",
+   "resposta": "Compra feita **fora da loja física**, como pelo Instagram ou WhatsApp, dá direito de desistir **sem justificar** (CDC, art. 49). Avise a loja por escrito e guarde as conversas."
+  },
+  {
+   "estilo": "juridiques",
+   "termo": "Direito de arrependimento",
+   "significado": "É o direito de desistir de uma compra feita fora da loja, em até 7 dias, sem precisar explicar o motivo.",
+   "exemplo": "comprou um celular pelo site e mudou de ideia: dá para desistir e receber o dinheiro de volta (CDC, art. 49)."
+  },
+  {
+   "estilo": "tabela",
+   "titulo": "Pensão por morte: quanto tempo dura?",
+   "sub": "Para cônjuge ou companheiro(a), conforme a idade na data do óbito:",
+   "colunas": [
+    "Idade",
+    "Duração"
+   ],
+   "linhas": [
+    [
+     "Menos de 22 anos",
+     "3 anos"
+    ],
+    [
+     "22 a 27 anos",
+     "6 anos"
+    ],
+    [
+     "28 a 30 anos",
+     "10 anos"
+    ],
+    [
+     "31 a 41 anos",
+     "15 anos"
+    ],
+    [
+     "42 a 44 anos",
+     "20 anos"
+    ],
+    [
+     "45 anos ou mais",
+     "Vitalícia"
+    ]
+   ],
+   "nota": "Lei 8.213/91, art. 77, com idades da Portaria ME 424/2020. Exige 18 contribuições e 2 anos de união; sem isso, em regra, 4 meses.",
+   "kicker": "DIREITO PREVIDENCIÁRIO"
+  },
+  {
+   "estilo": "mudou_lei",
+   "foto": "banco/escala6x1/HaZhm6xIUgs.jpg",
+   "crop_y": 0.4,
+   "data": "14/10/2026",
+   "selo": "APROVADO",
+   "manchete": "Senado aprova o fim da escala 6x1",
+   "texto": "A PEC prevê **duas folgas por semana** e jornada de até **40 horas**, sem redução de salário. As regras só valem **depois da promulgação**.",
+   "kicker": "DIREITO DO TRABALHO"
+  },
+  {
+   "estilo": "fluxo",
+   "titulo": "Posso desistir da minha compra?",
+   "passos": [
+    [
+     "Comprou fora da loja física (site, app, WhatsApp)?",
+     "Valem as regras de troca da loja"
+    ],
+    [
+     "Está dentro de 7 dias da compra ou da entrega?",
+     "Veja a garantia por defeito"
+    ]
+   ],
+   "resultado": "Pode desistir e receber todo o valor de volta (CDC, art. 49)"
+  }
+ ]
+}
