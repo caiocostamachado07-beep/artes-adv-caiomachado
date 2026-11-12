@@ -1,0 +1,51 @@
+{
+ "arquivo": "2026-11-25-carrossel-golpe-pix-banco",
+ "kicker": "DIREITO DO CONSUMIDOR",
+ "capa": {
+  "foto": "banco/fraudebancaria/hgz7pZkQoQc.jpg",
+  "l1": "Caiu em golpe",
+  "l2": "no banco?",
+  "pill": "Saiba o que fazer"
+ },
+ "paginas": [
+  {
+   "destaque": "1º passo",
+   "titulo": "Avise o banco na hora",
+   "itens": [
+    "Use o canal oficial, peça o bloqueio e anote o número do protocolo"
+   ],
+   "foto": "banco/fraudebancaria/tgquMvhNLc4.jpg"
+  },
+  {
+   "destaque": "2º passo",
+   "titulo": "Guarde as provas",
+   "itens": [
+    "Faça boletim de ocorrência e guarde prints, comprovantes e conversas"
+   ]
+  },
+  {
+   "destaque": "A regra",
+   "titulo": "O banco pode responder",
+   "itens": [
+    "O STJ entende que os bancos respondem por fraudes de terceiros em operações bancárias (Súmula 479)"
+   ],
+   "foto": "banco/fraudebancaria/YXl2LXviw_Y.jpg",
+   "crop_y": 900
+  },
+  {
+   "destaque": "Depois",
+   "titulo": "Se o banco negar",
+   "itens": [
+    "Reclame no Banco Central e no consumidor.gov.br",
+    "Cada caso é analisado individualmente"
+   ],
+   "nota": "Cada caso tem detalhes: a regra depende da situação."
+  }
+ ],
+ "final": {
+  "foto": "banco/fraudebancaria/ISCDAxCEbPM.jpg",
+  "l1": "Ficou com dúvida?",
+  "l2": "Fale comigo!",
+  "sub": "Eu te oriento no seu caso."
+ }
+}

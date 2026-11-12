@@ -12,7 +12,7 @@
    "Direito de Vizinhança",
    "Compliance"
   ],
-  "proximo": 8
+  "proximo": 2
  },
  "posts_comuns": {
   "_regra": "desde 11/11/2026: SEMPRE foto pública do banco de imagens (o Caio pediu para não usar mais fotos dele)",
@@ -41,7 +41,10 @@
   "2026-11-18 carrossel: caio (barulho do vizinho, CC 1.277/1.336/1.337; capa foto17, final foto28) | area Vizinhança",
   "2026-11-11: Caio pediu para parar de usar fotos dele; só banco público e mais imagens nos carrosséis. Carrossel 18/11 (barulho) refeito com 4 fotos públicas.",
   "2026-11-11: Caio aprovou os 6 estilos novos (claro, moldura, mito x verdade, lei, checklist, número); alternar com o estilo atual.",
-  "2026-11-11: Caio aprovou também os 7 estilos extras (timeline, certo_errado, pergunta, juridiques, tabela, mudou_lei, fluxo) no rodízio."
+  "2026-11-11: Caio aprovou também os 7 estilos extras (timeline, certo_errado, pergunta, juridiques, tabela, mudou_lei, fluxo) no rodízio.",
+  "2026-11-23 post comum: atual (compliance na empresa, Lei 12.846/2013 art. 7º VIII; banco/compliance/9i5eqBarv-k) | area Compliance",
+  "2026-11-25 carrossel: atual (golpe bancário, Súmula 479 STJ; fotos banco/fraudebancaria hgz7pZkQoQc, tgquMvhNLc4, YXl2LXviw_Y, ISCDAxCEbPM) | area Consumidor",
+  "2026-11-27 post comum: numero (15 dias pagos pela empresa, Lei 8.213/91 art. 60 §3º; banco/incapacidade/JqvyW5ap1ak) | area Previdenciário"
  ],
  "estilos": {
   "_regra": "desde 11/11/2026 o Caio aprovou todos os estilos: alternar estilo atual (escuro) com um estilo novo, peça a peça. Cada tipo de peça tem seu próprio ciclo.",
@@ -68,7 +71,7 @@
     "atual",
     "fluxo"
    ],
-   "proximo": 0
+   "proximo": 2
   },
   "carrossel": {
    "ciclo": [
@@ -85,7 +88,7 @@
     "atual",
     "perguntas"
    ],
-   "proximo": 0
+   "proximo": 1
   },
   "_extra": "mudou_lei NÃO entra no ciclo: use só quando houver novidade legal real e recente na área da vez (substitui o estilo da vez sem avançar o ciclo)."
  }
