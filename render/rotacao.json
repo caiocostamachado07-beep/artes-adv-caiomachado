@@ -47,57 +47,50 @@
   "2026-11-27 post comum: numero (15 dias pagos pela empresa, Lei 8.213/91 art. 60 §3º; banco/incapacidade/JqvyW5ap1ak) | area Previdenciário",
   "2026-11-19 story: post_feed (barulho do vizinho) | 2026-11-24 story: alerta (13º salário até 30/11)",
   "2026-11-17: horários ajustados (posts 18h; Stories 10h terça e sexta). Story 20/11 post_feed (barulho), 24/11 alerta (13º), 27/11 termo (carência).",
-  "2026-11-17: a pedido do Caio, posts já agendados trocados para estilos novos: 18/11 barulho = passo_a_passo; 23/11 compliance = checklist; 25/11 golpe = mito (27/11 já era numero). Próximos: post 'atual', carrossel 'atual'."
+  "2026-11-17: a pedido do Caio, posts já agendados trocados para estilos novos: 18/11 barulho = passo_a_passo; 23/11 compliance = checklist; 25/11 golpe = mito (27/11 já era numero). Próximos: post 'atual', carrossel 'atual'.",
+  "2026-11-17: estilos e modelos de Stories passam a ser sorteados (aleatórios, sem repetir os últimos)."
  ],
  "estilos": {
-  "_regra": "desde 11/11/2026 o Caio aprovou todos os estilos: alternar estilo atual (escuro) com um estilo novo, peça a peça. Cada tipo de peça tem seu próprio ciclo.",
+  "_regra": "desde 17/11/2026 (pedido do Caio): estilos SORTIDOS, de forma aleatória. Para cada peça, sorteie um estilo da lista 'opcoes' do tipo da peça, sem repetir nenhum dos 3 últimos usados nesse tipo (veja 'ultimos'), e atualize 'ultimos'. O estilo 'atual' também entra no sorteio.",
   "post_comum": {
-   "ciclo": [
+   "opcoes": [
     "atual",
     "numero",
-    "atual",
     "moldura",
-    "atual",
     "lei",
-    "atual",
     "checklist",
-    "atual",
     "timeline",
-    "atual",
     "certo_errado",
-    "atual",
     "pergunta",
-    "atual",
     "juridiques",
-    "atual",
     "tabela",
-    "atual",
     "fluxo"
    ],
-   "proximo": 2
+   "ultimos": [
+    "checklist",
+    "numero"
+   ]
   },
   "carrossel": {
-   "ciclo": [
+   "opcoes": [
     "atual",
     "claro",
-    "atual",
     "mito",
-    "atual",
     "moldura",
-    "atual",
     "lei_checklist",
-    "atual",
     "passo_a_passo",
-    "atual",
     "perguntas"
    ],
-   "proximo": 4
+   "ultimos": [
+    "passo_a_passo",
+    "mito"
+   ]
   },
   "_extra": "mudou_lei NÃO entra no ciclo: use só quando houver novidade legal real e recente na área da vez (substitui o estilo da vez sem avançar o ciclo)."
  },
  "stories": {
-  "_regra": "desde 17/11/2026 (ajustado pelo Caio): Stories às 10h, toda TERÇA e toda SEXTA. Posts do feed às 18h. 'alerta' só com prazo real e próximo; 'post_feed' mostra o post mais recente já publicado. Se o mês passar de 20 publicações (limite do plano gratuito), pule Stories (começando pelos de sexta em semana com post na sexta).",
-  "ciclo": [
+  "_regra": "desde 17/11/2026 (ajustado pelo Caio): Stories às 10h, toda TERÇA e toda SEXTA. Posts do feed às 18h. 'alerta' só com prazo real e próximo; 'post_feed' mostra o post mais recente já publicado. Se o mês passar de 20 publicações (limite do plano gratuito), pule Stories (começando pelos de sexta em semana com post na sexta). Modelos também SORTIDOS: sorteie de 'opcoes' sem repetir os 2 últimos ('ultimos'); 'alerta' só com prazo real e próximo.",
+  "opcoes": [
    "dica",
    "sabia",
    "mito",
@@ -105,6 +98,9 @@
    "alerta",
    "termo"
   ],
-  "proximo": 0
+  "ultimos": [
+   "alerta",
+   "termo"
+  ]
  }
 }

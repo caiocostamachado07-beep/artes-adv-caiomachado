@@ -54,3 +54,7 @@ Amostras: `render/amostras/estilos-extras.json` (imagens `arte/amostra-extra-*.p
 - Dias e horário (ajustados pelo Caio em 17/11/2026): **toda terça e toda sexta, às 10h**. Posts do feed passaram para **18h**. Limite do plano gratuito do Metricool: 20 publicações/mês no total; se passar, pule Stories de sexta em semana com post na sexta.
 - Rodízio em `render/rotacao.json` → `stories`. "alerta" só com prazo real e próximo; "post_feed" usa a 1ª imagem do post mais recente já publicado.
 - Metricool: instagramData {type:"STORY"}, media = URL do .jpg, SEM text (Story sozinho não leva legenda), sem links/figurinhas (senão não sai automático).
+
+
+## Sorteio de estilos (17/11/2026)
+O Caio pediu estilos **sortidos, de forma aleatória**. Em `render/rotacao.json`, cada tipo (post comum, carrossel, Stories) tem `opcoes` e `ultimos`: sorteie entre as opções, sem repetir os 3 últimos do mesmo tipo (2 nos Stories), e atualize `ultimos`. Isso substitui os ciclos fixos descritos acima. 'mudou_lei' continua fora do sorteio (só com novidade legal real).
