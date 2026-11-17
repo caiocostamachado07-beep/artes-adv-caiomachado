@@ -48,3 +48,9 @@ Amostras: `render/amostras/estilos-extras.json` (imagens `arte/amostra-extra-*.p
 - **timeline** (3 a 4 marcos com prazos), **certo_errado** (3 itens por coluna), **pergunta** (rótulo padrão "PERGUNTA FREQUENTE"; use rotulo "ME PERGUNTARAM" só com pergunta real enviada pelo Caio), **juridiques** (termo + significado + exemplo), **tabela** (até 6 linhas), **fluxo** (2 a 3 perguntas Sim/Não + resultado). Post comum = 1 tela; foto dispensável.
 - Carrosséis novos: **passo_a_passo** = "moldura" (capa) + "timeline" + "certo_errado" + "fluxo" ou "tabela" + "final"; **perguntas** = "moldura" (capa) + 2 a 3 telas "pergunta" + "juridiques" + "final".
 - **mudou_lei**: fora do ciclo; só quando houver novidade legal real e recente (confirmada em fonte oficial ou grande veículo), no lugar do estilo da vez, sem avançar o ciclo.
+
+## Stories (aprovados em 17/11/2026)
+- Gerador: `render/stories.py` (1080x1920, JPEG). Modelos: `render/amostras/stories-modelos.json` (dica, sabia, mito, post_feed, alerta, termo). Só fotos públicas.
+- Dias: **terça toda semana** e **quinta só nas semanas sem post na sexta**, às **12h** (nunca no mesmo dia de post do feed). Limite do plano gratuito do Metricool: 20 publicações/mês no total.
+- Rodízio em `render/rotacao.json` → `stories`. "alerta" só com prazo real e próximo; "post_feed" usa a 1ª imagem do post mais recente já publicado.
+- Metricool: instagramData {type:"STORY"}, media = URL do .jpg, SEM text (Story sozinho não leva legenda), sem links/figurinhas (senão não sai automático).
