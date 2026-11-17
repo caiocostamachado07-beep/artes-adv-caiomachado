@@ -83,7 +83,7 @@ def moldura(t, k):
 def mito_capa(t, k):
     im, d = base(True)
     ph = foto(t["foto"], W, 640, t.get("crop_y")); im.paste(ph, (0, 0))
-    g = np.clip((np.arange(640) - 300) / 340, 0, 1)[:, None, None]
+    ys = np.arange(640); g = np.maximum(np.clip((ys - 300) / 340, 0, 1), np.clip(1 - ys / 200, 0, 1) * 0.7)[:, None, None]
     arr = np.array(im, dtype=np.float32); arr[:640] = arr[:640] * (1 - g) + np.array(NAVY) * g; im = Image.fromarray(arr.astype("uint8")); d = ImageDraw.Draw(im)
     header(d, True, k)
     y = 640

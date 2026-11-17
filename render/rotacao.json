@@ -46,7 +46,8 @@
   "2026-11-25 carrossel: atual (golpe bancário, Súmula 479 STJ; fotos banco/fraudebancaria hgz7pZkQoQc, tgquMvhNLc4, YXl2LXviw_Y, ISCDAxCEbPM) | area Consumidor",
   "2026-11-27 post comum: numero (15 dias pagos pela empresa, Lei 8.213/91 art. 60 §3º; banco/incapacidade/JqvyW5ap1ak) | area Previdenciário",
   "2026-11-19 story: post_feed (barulho do vizinho) | 2026-11-24 story: alerta (13º salário até 30/11)",
-  "2026-11-17: horários ajustados (posts 18h; Stories 10h terça e sexta). Story 20/11 post_feed (barulho), 24/11 alerta (13º), 27/11 termo (carência)."
+  "2026-11-17: horários ajustados (posts 18h; Stories 10h terça e sexta). Story 20/11 post_feed (barulho), 24/11 alerta (13º), 27/11 termo (carência).",
+  "2026-11-17: a pedido do Caio, posts já agendados trocados para estilos novos: 18/11 barulho = passo_a_passo; 23/11 compliance = checklist; 25/11 golpe = mito (27/11 já era numero). Próximos: post 'atual', carrossel 'atual'."
  ],
  "estilos": {
   "_regra": "desde 11/11/2026 o Caio aprovou todos os estilos: alternar estilo atual (escuro) com um estilo novo, peça a peça. Cada tipo de peça tem seu próprio ciclo.",
@@ -90,7 +91,7 @@
     "atual",
     "perguntas"
    ],
-   "proximo": 1
+   "proximo": 4
   },
   "_extra": "mudou_lei NÃO entra no ciclo: use só quando houver novidade legal real e recente na área da vez (substitui o estilo da vez sem avançar o ciclo)."
  },
