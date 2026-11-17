@@ -1,0 +1,47 @@
+{
+ "arquivo": "amostra-story",
+ "kicker": "DIREITO DO CONSUMIDOR",
+ "stories": [
+  {
+   "estilo": "dica",
+   "foto": "banco/blackfriday/N7U-_EN81tE.jpg",
+   "crop_y": 0.35,
+   "titulo": "Comprou online e se arrependeu?",
+   "texto": "Você tem **7 dias** para desistir, **sem justificar**, contados da compra ou da entrega (CDC, art. 49)."
+  },
+  {
+   "estilo": "sabia",
+   "numero": "90",
+   "unidade": "dias",
+   "texto": "é o prazo para reclamar de **defeito em produto durável**, como celular, geladeira ou móvel.",
+   "fonte": "CDC, art. 26, II"
+  },
+  {
+   "estilo": "mito",
+   "kicker": "DIREITO SUCESSÓRIO",
+   "afirmacao": "O herdeiro tem que pagar as dívidas do falecido com o próprio dinheiro.",
+   "resposta": "Mito",
+   "explicacao": "As dívidas são pagas **com os bens da herança**, só até o valor dela. O patrimônio pessoal do herdeiro não responde.",
+   "fonte": "Código Civil, art. 1.792"
+  },
+  {
+   "estilo": "post_feed",
+   "kicker": "DIREITO SUCESSÓRIO",
+   "post": "arte/2026-11-16-foto-inventario.png",
+   "titulo": "Inventário em cartório: você sabe quando dá para fazer?"
+  },
+  {
+   "estilo": "alerta",
+   "kicker": "DIREITO DO TRABALHO",
+   "prazo": "Até 30/11",
+   "titulo": "1ª parcela do 13º salário",
+   "texto": "A empresa deve pagar a **1ª parcela até 30 de novembro** e a **2ª até 20 de dezembro** (Lei 4.749/65)."
+  },
+  {
+   "estilo": "termo",
+   "kicker": "DIREITO CIVIL",
+   "termo": "Usucapião",
+   "significado": "É quando a pessoa passa a ser dona de um imóvel por ter a posse dele por muito tempo, sem interrupção e sem oposição, no prazo que a lei prevê."
+  }
+ ]
+}
