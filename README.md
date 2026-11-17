@@ -51,6 +51,6 @@ Amostras: `render/amostras/estilos-extras.json` (imagens `arte/amostra-extra-*.p
 
 ## Stories (aprovados em 17/11/2026)
 - Gerador: `render/stories.py` (1080x1920, JPEG). Modelos: `render/amostras/stories-modelos.json` (dica, sabia, mito, post_feed, alerta, termo). Só fotos públicas.
-- Dias: **terça toda semana** e **quinta só nas semanas sem post na sexta**, às **12h** (nunca no mesmo dia de post do feed). Limite do plano gratuito do Metricool: 20 publicações/mês no total.
+- Dias e horário (ajustados pelo Caio em 17/11/2026): **toda terça e toda sexta, às 10h**. Posts do feed passaram para **18h**. Limite do plano gratuito do Metricool: 20 publicações/mês no total; se passar, pule Stories de sexta em semana com post na sexta.
 - Rodízio em `render/rotacao.json` → `stories`. "alerta" só com prazo real e próximo; "post_feed" usa a 1ª imagem do post mais recente já publicado.
 - Metricool: instagramData {type:"STORY"}, media = URL do .jpg, SEM text (Story sozinho não leva legenda), sem links/figurinhas (senão não sai automático).

@@ -45,7 +45,8 @@
   "2026-11-23 post comum: atual (compliance na empresa, Lei 12.846/2013 art. 7º VIII; banco/compliance/9i5eqBarv-k) | area Compliance",
   "2026-11-25 carrossel: atual (golpe bancário, Súmula 479 STJ; fotos banco/fraudebancaria hgz7pZkQoQc, tgquMvhNLc4, YXl2LXviw_Y, ISCDAxCEbPM) | area Consumidor",
   "2026-11-27 post comum: numero (15 dias pagos pela empresa, Lei 8.213/91 art. 60 §3º; banco/incapacidade/JqvyW5ap1ak) | area Previdenciário",
-  "2026-11-19 story: post_feed (barulho do vizinho) | 2026-11-24 story: alerta (13º salário até 30/11)"
+  "2026-11-19 story: post_feed (barulho do vizinho) | 2026-11-24 story: alerta (13º salário até 30/11)",
+  "2026-11-17: horários ajustados (posts 18h; Stories 10h terça e sexta). Story 20/11 post_feed (barulho), 24/11 alerta (13º), 27/11 termo (carência)."
  ],
  "estilos": {
   "_regra": "desde 11/11/2026 o Caio aprovou todos os estilos: alternar estilo atual (escuro) com um estilo novo, peça a peça. Cada tipo de peça tem seu próprio ciclo.",
@@ -94,7 +95,7 @@
   "_extra": "mudou_lei NÃO entra no ciclo: use só quando houver novidade legal real e recente na área da vez (substitui o estilo da vez sem avançar o ciclo)."
  },
  "stories": {
-  "_regra": "desde 17/11/2026: Stories às 12h, em dias SEM post no feed: toda terça + quinta só nas semanas sem post na sexta. 'alerta' só com prazo real e próximo (se não houver, pule para o próximo do ciclo sem avançar além dele); 'post_feed' mostra o post mais recente já publicado.",
+  "_regra": "desde 17/11/2026 (ajustado pelo Caio): Stories às 10h, toda TERÇA e toda SEXTA. Posts do feed às 18h. 'alerta' só com prazo real e próximo; 'post_feed' mostra o post mais recente já publicado. Se o mês passar de 20 publicações (limite do plano gratuito), pule Stories (começando pelos de sexta em semana com post na sexta).",
   "ciclo": [
    "dica",
    "sabia",
@@ -103,6 +104,6 @@
    "alerta",
    "termo"
   ],
-  "proximo": 5
+  "proximo": 0
  }
 }
