@@ -12,7 +12,7 @@
    "Direito de Vizinhança",
    "Compliance"
   ],
-  "proximo": 2
+  "proximo": 4
  },
  "posts_comuns": {
   "_regra": "desde 11/11/2026: SEMPRE foto pública do banco de imagens (o Caio pediu para não usar mais fotos dele)",
@@ -48,7 +48,10 @@
   "2026-11-19 story: post_feed (barulho do vizinho) | 2026-11-24 story: alerta (13º salário até 30/11)",
   "2026-11-17: horários ajustados (posts 18h; Stories 10h terça e sexta). Story 20/11 post_feed (barulho), 24/11 alerta (13º), 27/11 termo (carência).",
   "2026-11-17: a pedido do Caio, posts já agendados trocados para estilos novos: 18/11 barulho = passo_a_passo; 23/11 compliance = checklist; 25/11 golpe = mito (27/11 já era numero). Próximos: post 'atual', carrossel 'atual'.",
-  "2026-11-17: estilos e modelos de Stories passam a ser sorteados (aleatórios, sem repetir os últimos)."
+  "2026-11-17: estilos e modelos de Stories passam a ser sorteados (aleatórios, sem repetir os últimos).",
+  "2026-11-30 post comum: fluxo (despesa médica no IR, Lei 9.250/95 art. 8º; sem foto) | area Tributário e IR",
+  "2026-12-02 carrossel: moldura (LGPD na pequena empresa, arts. 6º, 7º, 46, 48; fotos banco/lgpd DcpblPZ6fDA, 9a1rahl70i4, xBxFqxkxGYk, E4Q1g5Uf_7A, qJRSDvBudxM) | area Digital e LGPD",
+  "2026-12-01 story: sabia (5 anos, CDC art. 27) | 2026-12-04 story: alerta (2ª parcela do 13º até 20/12)"
  ],
  "estilos": {
   "_regra": "desde 17/11/2026 (pedido do Caio): estilos SORTIDOS, de forma aleatória. Para cada peça, sorteie um estilo da lista 'opcoes' do tipo da peça, sem repetir nenhum dos 3 últimos usados nesse tipo (veja 'ultimos'), e atualize 'ultimos'. O estilo 'atual' também entra no sorteio.",
@@ -68,7 +71,8 @@
    ],
    "ultimos": [
     "checklist",
-    "numero"
+    "numero",
+    "fluxo"
    ]
   },
   "carrossel": {
@@ -83,7 +87,8 @@
    ],
    "ultimos": [
     "passo_a_passo",
-    "mito"
+    "mito",
+    "moldura"
    ]
   },
   "_extra": "mudou_lei NÃO entra no ciclo: use só quando houver novidade legal real e recente na área da vez (substitui o estilo da vez sem avançar o ciclo)."
@@ -99,8 +104,9 @@
    "termo"
   ],
   "ultimos": [
-   "alerta",
-   "termo"
+   "termo",
+   "sabia",
+   "alerta"
   ]
  }
 }
